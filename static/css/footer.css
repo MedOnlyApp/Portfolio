@@ -1,0 +1,97 @@
+footer {
+    /* height: 300px; */
+    background-color: rgb(17 24 39 / 0.8);
+    backdrop-filter: blur(65px);
+
+    border: solid;
+    border-width: 1px 0 0 0;
+    border-color: rgba(255, 255, 255, 0.2);
+
+    box-sizing: border-box;
+    padding: 50px 10% 30px 10%;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div > p {
+    /* font-size: larger; */
+    font-weight: lighter;
+
+    text-align: center;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+footer > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer > div > div  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+footer > div > div > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+
+    padding: 0;
+
+}
+
+footer > div > div > ul > li {
+    float: left;
+    padding: 0 10px;
+}
+
+footer > div > div > ul > li > a {
+    text-decoration: none;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: fit-content;
+
+    /* padding: 0 5px; */
+
+    transition: 0.3s;
+}
+
+footer > div > div > ul > li > a:hover {
+    font-size: large;
+    color: gray;
+}
+
+
+#rights {
+    padding: 20px 0 0 0;
+    border: solid;
+    border-width: 1px 0 0 0;
+}
+
+#rights > p {
+    padding: 0 0 0 10px;
+    margin: 0;
+
+    font-size: smaller;
+    font-weight: lighter;
+
+    text-align: center;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.6);
+
+    
+}

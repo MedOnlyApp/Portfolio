@@ -1,0 +1,149 @@
+#skills_id {
+    background-color: aqua;
+    box-sizing: border-box;
+    padding: 85px 60px;
+
+    background-color: rgb(17 24 39 / 0.8);
+    backdrop-filter: blur(65px);
+
+    border: solid;
+    border-width: 1px 0 0 0;
+    border-color: rgba(255, 255, 255, 0.2);
+
+}
+
+#skills_id > #skills_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+#skills_id > #skills_header > p {
+    margin-top: 0;
+    font-size: larger;
+    font-weight: lighter;
+
+    text-align: center;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+
+#skills_id > #skills_header > span {
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 5px;
+
+    /* background-image: linear-gradient(110deg,#363434, #5c5c5f, rgb(83, 83, 83),#adaaac, #666768, rgb(47, 47, 47)); */
+    background-image: linear-gradient(90deg, #363434, #5c5c5f, rgb(198, 198, 198), #5c5c5f, #363434);
+    background-size: 400%;
+    background-position: left;
+    animation: moving_gradient 5s infinite ease-in-out alternate;
+    
+    border-radius: 5px;
+}
+
+@keyframes moving_gradient{
+    form {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}
+
+#skills_id > #skills_body > div {
+    margin-bottom: 40px;
+}
+
+#skills_id > #skills_body > div > .skills_title {
+    display: flex;
+    align-items: center;
+}
+
+#skills_id > #skills_body > div > .skills_title > img {
+    width: 30px;
+}
+
+#skills_id > #skills_body > div > .skills_title > h2 {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* #skills_id > #skills_body > div > img {
+    display: inline;
+} */
+
+#skills_id > #skills_body > div > .skills {
+    /* display: flex;
+    flex-wrap: wrap;
+    max-width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#skills_id > #skills_body > div > .skills > div {
+    display: flex;
+    align-items: center;
+    
+    box-sizing: border-box;
+    padding-left: 5%;
+    /* flex-grow: 1; */
+    height: 60px;
+    /* width: 30%; */
+    min-width: 300px;
+    background-color: rgb(64, 72, 95);
+
+    border: solid;
+    border-width: 0;
+    border-radius: 7px;
+    /* border-color: rgb(64, 72, 95); */
+    
+    transition: 0.5s;
+}
+
+#skills_id > #skills_body > div > .skills > div:hover {
+    box-shadow: 0 0 7px rgb(166, 174, 198);
+}
+
+#skills_id > #skills_body > div > .skills > div > img {
+    width: 30px;
+}
+
+#skills_id > #skills_body > div > .skills > div > span {
+    margin-left: 3%;
+    font-size: 17px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+@media only screen and (max-width: 1060px) {
+
+    #skills_id > #skills_body > div > .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    #skills_id > #skills_body > div > .skills {
+        grid-template-columns: 1fr;
+    }
+
+
+}
