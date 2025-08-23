@@ -31,14 +31,16 @@
 
                 <a href="#" class="name_title"><span>R</span>ouane</a>
                 
-                <ul>
+                <ul class="header-menu">
                     <li><a href="#about_id">About</a></li>
                     <li><a href="#experience_id">Experiences</a></li>
                     <li><a href="#project_id">Projects</a></li>
                     <li><a href="#skills_id">Skills</a></li>
-                    <li><a href="#contact_id" class="contact_me">Contact Me</a></li>
+                    <li><a href="#about_id" class="contact_me contact-button">Contact Me</a></li>
                 </ul>
+
             </div>
+            <span class="material-symbols-outlined menu-icon">menu</span>
         </header>
 
         <main>
@@ -108,8 +110,7 @@
                 <div id="about_body">
                     <div>
                         <div class="img_div">
-                            <img src="../static/img/IMG-20211124-WA0003.jpg" alt="">
-                            <!-- <div></div> -->
+                            <img src="../static/img/portfolio_pic.jpg" alt="">
                         </div>
                     </div>
 
@@ -124,21 +125,17 @@
                 </div>
 
                 <div id="contact_id">
-                    <a href="">
-                        <img src="" alt="moh">
-                        <span>Email</span>
+                    <a href="mailto:mohamed.rouane.23@ump.ac.ma">
+                        <img src="../static/img/email.svg" alt="">
+                        <span class="contact-type">Email</span>
                     </a>
-                    <a href="">
-                        <img src="" alt="moh">
-                        <span>Email</span>
+                    <a href="https://www.linkedin.com/in/mohamed-rouane/">
+                        <img src="../static/img/linkedin.svg" alt="">
+                        <span class="contact-type">Linkedin</span>
                     </a>
-                    <a href="">
-                        <img src="" alt="moh">
-                        <span>Email</span>
-                    </a>
-                    <a href="">
-                        <img src="" alt="moh">
-                        <span>Email</span>
+                    <a href="https://github.com/MedOnlyApp/">
+                        <img src="../static/img/github.svg" alt="">
+                        <span class="contact-type">Github</span>
                     </a>
                 </div>
             </div>
@@ -281,8 +278,10 @@
                     <div>
                         <div>
                             <span class="experience_time">2024 - Present</span>
-                            <span class="material-symbols-outlined location_icon">location_on</span>
-                            <span class="location">Oujda, Morocco</span>
+                            <div>
+                                <span class="material-symbols-outlined location_icon">location_on</span>
+                                <span class="location">Oujda, Morocco</span>
+                            </div>
                         </div>
                         <h2>Data Science and Cloud Computing</h2>
                         <span class="experience_org">ENSAO</span>
@@ -294,8 +293,10 @@
                     <div>
                         <div>
                             <span class="experience_time">2022 - 2024</span>
-                            <span class="material-symbols-outlined location_icon">location_on</span>
-                            <span class="location">Oujda, Morocco</span>
+                            <div>
+                                <span class="material-symbols-outlined location_icon">location_on</span>
+                                <span class="location">Oujda, Morocco</span>
+                            </div>
                         </div>
                         <h2>Integrated Preparatory Classes</h2>
                         <span class="experience_org">ENSAO</span>
@@ -467,11 +468,11 @@
                 <p>Fueling Innovation with Data</p>
                 <div>
                     <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Experiences</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#about_id">About</a></li>
+                        <li><a href="#experience_id">Experiences</a></li>
+                        <li><a href="#project_id">Projects</a></li>
+                        <li><a href="#skills_id">Skills</a></li>
+                        <li><a href="#about_id" class="contact-button">Contact</a></li>
                     </ul>
                 </div>
 
@@ -486,6 +487,7 @@
         <!-- <footer>footer</footer> -->
 
 
+        <script src="../static/javascript/header.js"></script>
         <script src="../static/javascript/welcome.js"></script>
         <script src="../static/javascript/contact_panel.js"></script>
         <script src="../static/javascript/projects_panel.js"></script>

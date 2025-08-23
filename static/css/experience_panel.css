@@ -1,7 +1,8 @@
 #experience_id {
     /* background-color: bisque; */
     box-sizing: border-box;
-    padding: 85px 20%;
+    /* padding: 85px 20%; */
+    padding: 85px 15%;
 
     background-color: rgba(27, 36, 56, 0.8);
     backdrop-filter: blur(65px);
@@ -24,6 +25,10 @@
     justify-content: center;
 
     margin-bottom: 50px;
+}
+
+#experience_id > #experience_header > h1 {
+    text-align: center;
 }
 
 #experience_id > #experience_header > p {
@@ -71,7 +76,8 @@
 
     /* margin: 11px 0; */
     box-sizing: border-box;
-    padding: 0 50px 20px 30px;
+    /* padding: 0 50px 20px 30px; */
+    padding: 0 5vw 20px 30px;
 }
 
 #experience_id > #experience_body > span {
@@ -93,6 +99,7 @@
 
 #experience_id > #experience_body > div > div {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -108,7 +115,7 @@
     border-radius: 15px;
 }
 
-#experience_id > #experience_body > div > div > .location_icon {
+#experience_id > #experience_body > div > div > div > .location_icon {
     /* font-size: 18px; */
     font-size: 15px;
     font-weight: lighter;
@@ -116,7 +123,7 @@
     padding: 0 5px 0 10px;
 }
 
-#experience_id > #experience_body > div > div > .location {
+#experience_id > #experience_body > div > div > div > .location {
     font-size: 15px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.618);
@@ -138,18 +145,14 @@
     font-weight: lighter;
 }
 
-/* #experience_id > #experience_body > div > .top {
-    top: -5px;
-    left: -8px;
+
+@media only screen and (max-width: 600px) {
+
+    #experience_id > #experience_body > div > div {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 10px;
+    }
+
 }
-
-#experience_id > #experience_body > div > .bottom {
-    bottom: -4%;
-    left: -8px;
-}
- */
-
-
-
-
-

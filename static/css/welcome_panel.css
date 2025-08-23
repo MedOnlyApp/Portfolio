@@ -8,44 +8,14 @@ main {
     /* padding-top: 83px; */
 }
 
-.float1 {
-    position: fixed;
-    bottom: 5%;
-    left: 7%;
-
-    background-color: rgba(255, 255, 255, 0.504);
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-}
-
-.float2 {
-    position: fixed;
-    top: 5%;
-    right: 10%;
-
-    background-color: rgba(255, 255, 255, 0.504);
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-}
-
-.float3 {
-    position: fixed;
-    bottom: 5%;
-    right: 15%;
-
-    background-color: rgba(255, 255, 255, 0.504);
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-}
-
 main > #welcome_id {
     /* background-color: rgba(40, 40, 49, 0.8); */
     background-color: rgb(17 24 39 / 0.8);
     backdrop-filter: blur(65px);
     height: 100vh;
+    /* height: fit-content; */
+    box-sizing: border-box;
+    /* padding-bottom: 20px; */
 
     box-sizing: border-box;
     padding-top: 130px;
@@ -70,7 +40,9 @@ main > #welcome_id {
 
 #welcome_id > h1 {
     text-align: center;
-    font-size: 70px;
+    /* font-size: 70px; */
+    /* font-size: 6vw; */
+    font-size: clamp(2rem, 5vw, 70px);
     margin: 5px 0px;
     z-index: 1;
 }
@@ -80,6 +52,7 @@ main > #welcome_id {
     font-size: 20px;
     line-height: 30px;
     z-index: 1;
+    margin: 20px;
 }
 
 #welcome_id > a {
@@ -147,89 +120,18 @@ main > #welcome_id {
     z-index: 0;
 }
 
-.S, .M, .L, .XL, .XXL {
-    animation: up-down 1s infinite alternate;
-}
-
-@keyframes up-down {
-    to {
-        transform: translateY(1px);
-    }
-    
-}
-
-#welcome_id > .sun {
-    height: 100vh;
-    width: 100vw;
-    
-    background-color: rgba(255, 255, 0, 0.508);
-    box-shadow: 0 70px 700px yellow;
-
-    right: 0%;
-    top: -90%;
-}
-
-#welcome_id > .XS {
-    height: 2px;
-    width: 2px;
-
-    background-color: white;
-    box-shadow: 0 0 200px white;
-    left: var(--random-left);
-    top: var(--random-top);
-    z-index: 0;
-    /* left: 75%;
-    top: 15%; */
-    
-}    
-
-#welcome_id > .S {
-    height: 50px;
-    width: 50px;
-
-    left: 75%;
-    top: 15%;
-    
-}    
-
-#welcome_id > .M {
-    height: 100px;
-    width: 100px;
-
-    left: 25%;
-    top: 15%;
-    
-}    
-
-#welcome_id > .L {
-    height: 170px;
-    width: 170px;
-    
-    right: 45%;
-    top: 30%;
-    
-}
-
-#welcome_id > .XL {
-    height: 270px;
-    width: 270px;
-    
-    left: 2%;
-    top: 45%;
-}    
-
-#welcome_id > .XXL {
-    height: 400px;
-    width: 400px;
-    
-    right: 5%;
-    top: 45%;
-}    
-
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+
+@media only screen and (max-width: 1500px) {
+    main > #welcome_id {
+        height: fit-content;
+        padding-bottom: 20px;
+    }
 }
