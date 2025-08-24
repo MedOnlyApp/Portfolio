@@ -26,22 +26,5 @@ contact_button.forEach(element => {
         contact_type.forEach(element => {
             element.style.left = "40%"
         })
-        // e.preventDefault()
-        // e.preventDefault()
-
-        // document.addEventListener('click', function(event) {
-        //     // contact_button.forEach(element => {
-        //         if (!contact_panel.contains(event.target)) {
-        //             console.log('Clicked outside the element!');
-        //             contact_panel.style.width = "50px"
-                    
-        
-        //             contact_type.forEach(element => {
-        //                 element.style.left = "100%"
-        //             })
-                    
-        //         }
-        //     // })
-        // })
     })
 })

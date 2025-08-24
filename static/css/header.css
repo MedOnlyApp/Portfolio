@@ -5,18 +5,10 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    /* height: 100%; */
-    /* background-color: rgb(92, 92, 87); */
 
     font-family: Rubik;
-
-    /* box-sizing: border-box; */
-    /* padding-top: 5%; */
-
     min-width: 430px;
-
     color: white;
-
     background-color: rgba(0, 0, 0, 0.805);
 }
 
@@ -27,11 +19,7 @@ header {
     justify-content: space-around;
     background-color: rgb(17 24 39 / 0.8);
     backdrop-filter: blur(20px);
-    
-    /* filter: blur(50px); */
-    
-    /* padding: 0 60px; */
-    /* height: 60px; */
+
     height: 12%;
     height: 90px;
     
@@ -118,7 +106,6 @@ header a {
 
     .menu-icon {
         visibility: visible;
-        /* display: inline-block !important; */
     }
 
     header > div > ul {
@@ -146,17 +133,13 @@ header a {
         float: none;
         box-sizing: border-box;
         padding: 1px 3vw;
-        width: 100vw;
-        /* background-color: rgb(82, 89, 95); */
-        
+        width: 100vw;        
     }
     
     header > div > ul > li > a {
         display: block;
         padding: 10px 0;
         width: 100%;
-        /* background-color: rgb(82, 89, 95); */
-
     }
 
     .contact_me {

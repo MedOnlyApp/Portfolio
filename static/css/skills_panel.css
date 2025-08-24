@@ -46,7 +46,6 @@
     width: 100px;
     height: 5px;
 
-    /* background-image: linear-gradient(110deg,#363434, #5c5c5f, rgb(83, 83, 83),#adaaac, #666768, rgb(47, 47, 47)); */
     background-image: linear-gradient(90deg, #363434, #5c5c5f, rgb(198, 198, 198), #5c5c5f, #363434);
     background-size: 400%;
     background-position: left;
@@ -82,14 +81,7 @@
     margin-left: 10px;
 }
 
-/* #skills_id > #skills_body > div > img {
-    display: inline;
-} */
-
 #skills_id > #skills_body > div > .skills {
-    /* display: flex;
-    flex-wrap: wrap;
-    max-width: 100%; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -101,16 +93,13 @@
     
     box-sizing: border-box;
     padding-left: 5%;
-    /* flex-grow: 1; */
     height: 60px;
-    /* width: 30%; */
     min-width: 300px;
     background-color: rgb(64, 72, 95);
 
     border: solid;
     border-width: 0;
     border-radius: 7px;
-    /* border-color: rgb(64, 72, 95); */
     
     transition: 0.5s;
 }

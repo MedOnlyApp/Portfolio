@@ -1,21 +1,12 @@
 main {
-    /* position: absolute; */
-    /* background-color: rgb(186, 186, 54); */
     background-color: rgba(0, 0, 0, 0.805);
-    /* height: 100%; */
-    /* margin-top: 84px; */
-    /* top: 12%; */
-    /* padding-top: 83px; */
 }
 
 main > #welcome_id {
-    /* background-color: rgba(40, 40, 49, 0.8); */
     background-color: rgb(17 24 39 / 0.8);
     backdrop-filter: blur(65px);
     height: 100vh;
-    /* height: fit-content; */
     box-sizing: border-box;
-    /* padding-bottom: 20px; */
 
     box-sizing: border-box;
     padding-top: 130px;
@@ -25,7 +16,6 @@ main > #welcome_id {
     align-items: center;
 
     position: relative;
-
     overflow: hidden;
 }
 
@@ -40,8 +30,6 @@ main > #welcome_id {
 
 #welcome_id > h1 {
     text-align: center;
-    /* font-size: 70px; */
-    /* font-size: 6vw; */
     font-size: clamp(2rem, 5vw, 70px);
     margin: 5px 0px;
     z-index: 1;
