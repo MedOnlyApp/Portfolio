@@ -180,7 +180,7 @@ main > #project_id > #project_body {
     color: white;
     background-color: black;
     height: 40px;
-    /* width: 100%; */
+    width: 50%;
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.207);
     transition: background-color 0.2s;
@@ -223,3 +223,4 @@ main > #project_id > #project_body {
 
 
 }
+
